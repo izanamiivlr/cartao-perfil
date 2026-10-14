@@ -49,4 +49,4 @@ Cartão/
 
 ## Autora
 
-Izabelly Sanches, estudante de Análise e Desenvolvimento de Sistemas.
+Feito com 💗 por [Izanamii](https://github.com/izanamiivlr)
