@@ -1,0 +1,70 @@
+/* Aqui começa com as margens padrão e faz o tamanho das caixas incluir padding e borda */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aqui é a cor de fundo, a fonte e o Flexbox centraliza o cartão na tela */
+body {
+    background-color:#1a1a1a; /* cor de fundo escura */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    min-height: 100vh;       /* ocupa a altura inteira da tela */
+}
+
+/* Estiliza o cartão: cor, bordas arredondadas e espaçamento interno */
+.cartao {
+    background-color: #2b2b2b;  /* uma cor de fundo pro cartão */
+    color: #f0f0f0;              /* cor do texto, que precisa contrastar com o fundo */
+    padding: 30px;            /* espaço entre a borda e o conteúdo, tipo 30px */
+    border-radius: 15px;      /* deixa os cantos arredondados, tipo 15px */
+    text-align: center;
+    max-width: 350px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); /* Sombra com um leve brilho verde ao redor do cartão */
+}
+
+/* Coloca os links lado a lado com espaço entre eles */
+.cartao ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Define o tamanho da foto, deixa redonda e com uma borda verde */
+.cartao img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;      /* 50% transforma o quadrado em círculo */
+    object-fit: cover;       /* corta a foto sem distorcer */
+    border: 4px solid #16a34a;   /* escolhe a cor da borda */
+    transition: transform 0.3s ease; /* Faz a mudar de tamanho de forma suave em 0,3 segundos */
+}
+
+.cartao img:hover {
+    transform: scale(1.15); /* Aumenta a foto em 15% quando o mouse passa por cima */
+}
+
+/* Links verdes, sem sublinhado, com transição suave */
+.cartao a {
+    color: #22c55e;
+    text-decoration: none;
+    display: inline-block;            /* necessário para o transform funcionar */
+    transition: transform 0.3s ease;  /* deixa o aumento suave */
+}
+
+/* Espaçamento entre o título e a foto */
+.cartao h1 { margin-top: 15px; }
+
+.cargo { color: #16a34a; margin-bottom: 15px; }  /* cargo em verde */
+
+.resumo { line-height: 1.5; }  /* mais espaço entre as linhas */
+
+/* aqui é o efeito de aumentar o link quando o mouse passa por cima */
+.cartao a:hover {
+    transform: scale(1.15); /* Aumenta o link em 15% ao passar o mouse */
+}

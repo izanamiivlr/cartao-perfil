@@ -1,0 +1,54 @@
+<!-- DOCTYPE: Aqui é onde sabemos que o documento é HTML5 -->
+<!DOCTYPE html>
+<!-- Aqui definimos o idioma da página como português do Brasil -->
+<html lang="pt-BR">
+<head>
+    <!-- Permite acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Faz a página se ajustar bem em telas de celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Cartão de Perfil</title>
+    <!-- Liga o arquivo CSS ao HTML -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Liga a biblioteca Font Awesome, que fornece os ícones das redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<!-- Body: corpo do site -->
+<body>
+    <main>
+        <!-- Section: cria o cartão que agrupa todas as informações do perfil -->
+        <section class="cartao">
+            <!-- Header: agrupa a foto e o nome -->
+            <header>
+                <!-- Figure: agrupa a imagem de perfil -->
+                <figure>
+                    <img src="foto.jpg" alt="Selfie de Izabelly com cabelo preto, óculos redondos e camiseta preta com detalhes verdes">
+                </figure>
+                <!-- H1: título principal, com meu nome -->
+                <h1>Izabelly Sanches</h1>
+                <!-- Parágrafo: aqui coloquei meu cargo -->
+                <p class="cargo">Desenvolvedora Front-End</p>
+            </header>
+            <!-- outro parágrafo: esse fiz um pequeno resumo sobre mim -->
+            <p class="resumo">
+                Estudante de Análise e Desenvolvimento de Sistemas, apaixonada por criar
+                interfaces bonitas e fáceis de usar. Estudo HTML, CSS e JavaScript e busco
+                minha primeira oportunidade na área de front-end.
+            </p>
+
+            <!-- Footer: aqui coloquei minhas redes sociais -->
+            <footer>
+                <!-- Lista com os links: com aria-label explicando para leitores de tela-->
+                <ul aria-label="Redes sociais">
+                    <!-- A tag i mostra o ícone. O aria-hidden esconde o ícone dos leitores de tela, que leem só o texto -->
+                    <li><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                </ul>
+            </footer>
+        </section>
+    </main>
+    
+</body>
+</html>
